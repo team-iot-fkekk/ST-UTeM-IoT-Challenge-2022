@@ -1,3 +1,5 @@
+![](images/st%20iot%202022%20logo.png)
+
 - [1. Welcome](#1-welcome)
 - [2. Required Components](#2-required-components)
   - [2.1. Hardware](#21-hardware)
