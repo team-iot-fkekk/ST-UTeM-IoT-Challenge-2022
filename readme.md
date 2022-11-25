@@ -17,7 +17,11 @@
     - [4.1.2. Board Manager Setup](#412-board-manager-setup)
     - [4.1.3. Library Setup](#413-library-setup)
     - [4.1.4. Load the stiot2022 sketch](#414-load-the-stiot2022-sketch)
-  - [4.2. Arduino Version 2.0 _(Coming Soon)_](#42-arduino-version-20-coming-soon)
+  - [4.2. Arduino Version 2.0](#42-arduino-version-20)
+    - [4.2.1. Preference Configurations](#421-preference-configurations)
+    - [4.2.2. Board Manager Setup](#422-board-manager-setup)
+    - [4.2.3. Library Setup](#423-library-setup)
+    - [4.2.4. Load the stiot2022 sketch](#424-load-the-stiot2022-sketch)
 - [5. Blynk IoT Platform Setup](#5-blynk-iot-platform-setup)
   - [5.1. Log in/Register Account](#51-log-inregister-account)
   - [5.2. Create New Template](#52-create-new-template)
@@ -179,7 +183,73 @@ Download and open the [stiot2022 sketch](./stiot2022-v2/stiot2022-v2.ino) in you
 
 ![](./images/ardu-sketch.png)
 
-## 4.2. Arduino Version 2.0 _(Coming Soon)_
+## 4.2. Arduino Version 2.0
+###  4.2.1. Preference Configurations
+
+1. Navigate to **File > Preferences**
+   
+   ![](./images/ardu2-preference0.png)
+
+2. Click on the icon for **Additional Boards Manager URLs**
+
+    ![](./images/ardu2-preference.png)  
+
+3. Type the following links into the textbox.
+   
+   ```
+   https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
+   http://arduino.esp8266.com/stable/package_esp8266com_index.json
+   ```
+
+4. Press **OK**
+
+###  4.2.2. Board Manager Setup
+
+1.  Navigate to **Tools > Board: > Board Manager**
+   
+    ![](./images/ardu2-board-manager.png)
+  
+2.  Type ```stm32``` in the search box. Select "STM32 MCU based Boards" and click **Install**.
+    
+    ![](./images/ardu2-stm32-install.png)
+  
+3. Type ```esp8266``` in the search box. Select "esp8266" and click **Install**.
+
+    ![](./images/ardu2-esp8266-install.png)
+
+###  4.2.3. Library Setup
+
+1. Download the Blynk_Release_v1.1.0.zip file from [Blynk Github](https://github.com/blynkkk/blynk-library/releases/tag/v1.1.0). 
+   
+    ![](./images/blynk-lib-dload.png)
+
+2. Extract and copy both **Libraries** and **Tools** folders.
+   
+3. Paste all of the folders to your _sketchbook folder_ of Arduino IDE. Navigate to **File > Preference** in Arduino IDE to find your _sketchbook folder_.
+   
+    ![](./images/ardu2-librarypath.png)
+
+    >- **libraries** should go to **libraries** 
+    >- **tools** should go to **tools** 
+    >- If you don't have **libraries** or **tools** folders, you can create them manually.
+
+4. Navigate to **Sketch > Include library > Manage Libraries**
+
+5. In the search box, type ```dht sensor library```. Click **Install**
+
+    ![](./images/ardu2-dht-install.png)
+
+    > If there is prompt to install "Adafruit Unified Sensor", click **YES**
+
+6. In the search box, type ```Adafruit Unified Sensor```. Click **Install**
+   Skip this instruction if you already install the library in (2).
+
+   ![](./images/ardu2-adafruit-install.png)
+
+###  4.2.4. Load the stiot2022 sketch
+Download and open the [stiot2022 sketch](./stiot2022-v2/stiot2022-v2.ino) in your PC.
+
+![](./images/ardu2-load.png)
 
 # 5. Blynk IoT Platform Setup
 
