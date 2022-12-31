@@ -26,8 +26,8 @@ char auth[] = BLYNK_AUTH_TOKEN;
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "SSID";
-char pass[] = "password";
+char ssid[] = "GxA50";
+char pass[] = "iemx6540";
 
 // Hardware Serial on Mega, Leonardo, Micro...
 //#define EspSerial Serial1

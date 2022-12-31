@@ -1,4 +1,4 @@
-![](images/st%20iot%202022%20logo.png)
+![Logo](images/utem%20st%20iot%202022%20logo.png)
 
 - [1. Welcome](#1-welcome)
 - [2. Required Components](#2-required-components)
@@ -11,6 +11,7 @@
   - [3.4. Rain Sensor](#34-rain-sensor)
   - [3.5. DHT11 Sensor](#35-dht11-sensor)
   - [3.6. ESP-01 with adapter](#36-esp-01-with-adapter)
+  - [3.7. ALTERNATIVE - ESP-01 without adapter](#37-alternative---esp-01-without-adapter)
 - [4. Arduino IDE Setup](#4-arduino-ide-setup)
   - [4.1. _This is for verion 1.8.19_](#41-this-is-for-verion-1819)
     - [4.1.1. Preference Configurations](#411-preference-configurations)
@@ -113,6 +114,20 @@ The ESP-01 is functions to enable wifi connection to the Nucleo-L412KB. The adap
 ||Rx|D5|
 
 ![Schematic](./images/06-edr-soil-rain-dht-esp.PNG)
+
+## 3.7. ALTERNATIVE - ESP-01 without adapter
+If the message "ESP not responding" received during program execution, most likely the adapter is faulty. As alternative, you need to re-wire the ESP-01 directly to the Nucleo-L412KB board (leaving the adapter out).
+
+|Sensor|Pin|Nucloe-L412KB|
+|:-----|:----:|----:|
+|ESP-01|Vcc|3V3|
+||EN|3V3|
+||Gnd|Gnd|
+||Tx|D4|
+||Rx|D5|
+
+![Schematic](./images/07-edr-soil-rain-dht-esp-2.png)
+
 
 # 4. Arduino IDE Setup
 ## 4.1. _This is for verion 1.8.19_ 
