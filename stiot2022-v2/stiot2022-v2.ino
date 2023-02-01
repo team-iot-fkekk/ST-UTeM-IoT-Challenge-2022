@@ -2,16 +2,15 @@
   WARNING!
     It's very tricky to get it working. Please read this article:
     http://help.blynk.cc/hardware-and-libraries/arduino/esp8266-with-at-firmware
-
   This is a simple demo of sending and receiving some data.
   Be sure to check out other examples!
  *************************************************************/
 
 // Template ID, Device Name and Auth Token are provided by the Blynk.Cloud
 // See the Device Info tab, or Template settings
-#define BLYNK_TEMPLATE_ID "TMP"
+#define BLYNK_TEMPLATE_ID "TMPLT0OeMyff"
 #define BLYNK_DEVICE_NAME "stutemiot"
-#define BLYNK_AUTH_TOKEN "Qdi1gIfqaya79pDG9-"
+#define BLYNK_AUTH_TOKEN "Qdi1gIfqaya79pDG9-sSsErXBbgwPduT"
 
 
 // Comment this out to disable prints and save space

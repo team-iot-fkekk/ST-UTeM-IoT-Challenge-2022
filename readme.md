@@ -64,7 +64,7 @@ The schematic desribe the connection for power line references regarding Vcc and
 The light diode resistor is functions to detect brighness. The resistor 10k ohm is used as the pull-down resistor.
 |Sensor|Pin|Nucloe-L412KB|
 |:-----|:----:|----:|
-|LDR|Top|Vcc|
+|LDR|Top|5V|
 ||End|A0|
 |10k ohm|Top|A0|
 ||End|Gnd|
@@ -87,7 +87,7 @@ The rain sensor is functions to detect the rain (water) existence. The rain leve
 
 |Sensor|Pin|Nucloe-L412KB|
 |:-----|:----:|----:|
-|Rain Sensor|Vcc|Vcc|
+|Rain Sensor|Vcc|5V|
 ||Gnd|Gnd|
 ||A0|A1|
 
@@ -98,7 +98,7 @@ The DHT11 sensor is functions to detect the temperature and humidity of the surr
 
 |Sensor|Pin|Nucloe-L412KB|
 |:-----|:----:|----:|
-|DHT11|Vcc|Vcc|
+|DHT11|Vcc|5V|
 ||Gnd|Gnd|
 ||Data|D6|
 
@@ -108,7 +108,7 @@ The DHT11 sensor is functions to detect the temperature and humidity of the surr
 The ESP-01 is functions to enable wifi connection to the Nucleo-L412KB. The adapter simplified the connection from 8-pin to 4-pin wiring. 
 |Sensor|Pin|Nucloe-L412KB|
 |:-----|:----:|----:|
-|ESP-01|Vcc|Vcc|
+|ESP-01|Vcc|5V|
 ||Gnd|Gnd|
 ||Tx|D4|
 ||Rx|D5|
@@ -403,7 +403,7 @@ To link your Blynk Cloud device and your STM32 board, you need to copy the Devic
 
 6. Click on the **Upload** button to program the board.
 7. Once programmed, click the serial monitor (magnifier icon on the top-right) to view the serial comm.
-8. Make sure ```Both NL & CR``` and ```9600 Baud``` are selected.
+8. Make sure ```Both NL & CR``` and ```115200 Baud``` are selected.
 9. A Blynk image is appear indicating the program is running. Sample image:
     
     ![Sample Image](images/Serial_Monitor_Blynk_Output.jpg)
