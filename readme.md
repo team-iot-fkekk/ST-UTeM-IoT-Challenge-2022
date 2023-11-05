@@ -57,7 +57,7 @@ The schematic desribe the connection for power line references regarding Vcc and
 
 ## 3.2. LDR
 The light diode resistor is functions to detect brighness. The resistor 10k ohm is used as the pull-down resistor.
-|Sensor|Pin|Nucloe-L412KB|
+|Sensor|Pin|Nucloe-G031K8|
 |:-----|:----:|----:|
 |LDR|Top|5V|
 ||End|A0|
@@ -69,7 +69,7 @@ The light diode resistor is functions to detect brighness. The resistor 10k ohm 
 ## 3.3. Soil Moisture Sensor
 The soil moisture sensor is functions to detect the moisture level of the soil. The soil moisture content is presented in value. Higher values indicated the dryness of the soil.
 
-|Sensor|Pin|Nucloe-L412KB|
+|Sensor|Pin|Nucloe-G031K8|
 |:-----|:----:|----:|
 |Moisture Sensor|Vcc|Vcc|
 ||Gnd|Gnd|
@@ -80,7 +80,7 @@ The soil moisture sensor is functions to detect the moisture level of the soil. 
 ## 3.4. Rain Sensor
 The rain sensor is functions to detect the rain (water) existence. The rain level  is presented in value. Higher values indicated the is no rain.
 
-|Sensor|Pin|Nucloe-L412KB|
+|Sensor|Pin|Nucloe-G031K8|
 |:-----|:----:|----:|
 |Rain Sensor|Vcc|5V|
 ||Gnd|Gnd|
@@ -91,7 +91,7 @@ The rain sensor is functions to detect the rain (water) existence. The rain leve
 ## 3.5. DHT11 Sensor
 The DHT11 sensor is functions to detect the temperature and humidity of the surroundings. The temperature is presented in degree Celsius while the humidity is presented by percentage.
 
-|Sensor|Pin|Nucloe-L412KB|
+|Sensor|Pin|Nucloe-G031K8|
 |:-----|:----:|----:|
 |DHT11|Vcc|5V|
 ||Gnd|Gnd|
@@ -100,8 +100,8 @@ The DHT11 sensor is functions to detect the temperature and humidity of the surr
 ![Schematic](./images/05-edr-soil-rain-dht.PNG)
 
 ## 3.6. ESP-01 with adapter
-The ESP-01 is functions to enable wifi connection to the Nucleo-L412KB. The adapter simplified the connection from 8-pin to 4-pin wiring. 
-|Sensor|Pin|Nucloe-L412KB|
+The ESP-01 is functions to enable wifi connection to the Nucleo-G031K8. The adapter simplified the connection from 8-pin to 4-pin wiring. 
+|Sensor|Pin|Nucloe-G031K8|
 |:-----|:----:|----:|
 |ESP-01|Vcc|5V|
 ||Gnd|Gnd|
@@ -111,9 +111,9 @@ The ESP-01 is functions to enable wifi connection to the Nucleo-L412KB. The adap
 ![Schematic](./images/06-edr-soil-rain-dht-esp.PNG)
 
 ## 3.7. ALTERNATIVE - ESP-01 without adapter
-If the message "ESP not responding" received during program execution, most likely the adapter is faulty. As alternative, you need to re-wire the ESP-01 directly to the Nucleo-L412KB board (leaving the adapter out).
+If the message "ESP not responding" received during program execution, most likely the adapter is faulty. As alternative, you need to re-wire the ESP-01 directly to the Nucleo-G031K8 board (leaving the adapter out).
 
-|Sensor|Pin|Nucloe-L412KB|
+|Sensor|Pin|Nucloe-G031K8|
 |:-----|:----:|----:|
 |ESP-01|Vcc|3V3|
 ||EN|3V3|
@@ -319,7 +319,7 @@ To link your Blynk Cloud device and your STM32 board, you need to copy the Devic
 
     ![](./images/ardu-select-board.png)
 
-4. Select the STM32 board ```L412KB```
+4. Select the STM32 board ``-G031K8```
 
     ![](./images/ardu-select-l412.png)
 
