@@ -1,6 +1,7 @@
 ![Logo](images/smkkrubong.jpg)
 
 - [1. Welcome](#1-welcome)
+- [This is a github page for ST UTeM IoT Challenge 2022. This page provides every stages of development process in completing the challenge in this year event. The theme is Plant:Things.](#this-is-a-github-page-for-st-utem-iot-challenge-2022-this-page-provides-every-stages-of-development-process-in-completing-the-challenge-in-this-year-event-the-theme-is-plantthings)
 - [2. Required Components](#2-required-components)
   - [2.1. Hardware](#21-hardware)
   - [2.2. Software](#22-software)
@@ -28,7 +29,11 @@
 - [6. Running the project](#6-running-the-project)
 
 # 1. Welcome
+<<<<<<< HEAD
+This is a github page for ST UTeM IoT Challenge 2022. This page provides every stages of development process in completing the challenge in this year event. The theme is Plant:Things.
+=======
 This is a github page for Program SULAM "Teknologi Mikropengawal". This page provides every stages of development process in completing the IoT system.
+>>>>>>> 4b16f47b2e137437036c0bb7814b803cd6d7867c
 
 # 2. Required Components
 ## 2.1. Hardware
