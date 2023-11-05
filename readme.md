@@ -44,7 +44,7 @@ This is a github page for Program SULAM "Teknologi Mikropengawal". This page pro
 10. Micro-USB cable
 
 ## 2.2. Software
-1. Arduino IDE (2.0+)
+1. Arduino IDE (version 2.0 or higher)
 2. Blynk IoT Apps (access from web browser)
 
 # 3. Overall Circuit Assembly
