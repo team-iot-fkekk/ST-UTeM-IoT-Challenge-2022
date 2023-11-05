@@ -1,4 +1,4 @@
-![Logo](images/utem%20st%20iot%202022%20logo.png)
+![Logo](images/smkkrubong.jpg)
 
 - [1. Welcome](#1-welcome)
 - [2. Required Components](#2-required-components)
@@ -13,16 +13,11 @@
   - [3.6. ESP-01 with adapter](#36-esp-01-with-adapter)
   - [3.7. ALTERNATIVE - ESP-01 without adapter](#37-alternative---esp-01-without-adapter)
 - [4. Arduino IDE Setup](#4-arduino-ide-setup)
-  - [4.1. _This is for verion 1.8.19_](#41-this-is-for-verion-1819)
+  - [4.1. Arduino Version 2.0](#41-arduino-version-20)
     - [4.1.1. Preference Configurations](#411-preference-configurations)
     - [4.1.2. Board Manager Setup](#412-board-manager-setup)
     - [4.1.3. Library Setup](#413-library-setup)
     - [4.1.4. Load the stiot2022 sketch](#414-load-the-stiot2022-sketch)
-  - [4.2. Arduino Version 2.0](#42-arduino-version-20)
-    - [4.2.1. Preference Configurations](#421-preference-configurations)
-    - [4.2.2. Board Manager Setup](#422-board-manager-setup)
-    - [4.2.3. Library Setup](#423-library-setup)
-    - [4.2.4. Load the stiot2022 sketch](#424-load-the-stiot2022-sketch)
 - [5. Blynk IoT Platform Setup](#5-blynk-iot-platform-setup)
   - [5.1. Log in/Register Account](#51-log-inregister-account)
   - [5.2. Create New Template](#52-create-new-template)
@@ -33,11 +28,11 @@
 - [6. Running the project](#6-running-the-project)
 
 # 1. Welcome
-This is a github page for ST UTeM IoT Challenge 2022. This page provides every stages of development process in completing the "challenge" in this year event. The theme is Plant:Things.
+This is a github page for Program SULAM "Teknologi Mikropengawal". This page provides every stages of development process in completing the IoT system.
 
 # 2. Required Components
 ## 2.1. Hardware
-1. Nucleo-L412KB
+1. Nucleo-G031K8
 2. ESP-01 (ESP8266) + Adapter Module
 3. LDR
 4. Rain sensor module
@@ -46,10 +41,10 @@ This is a github page for ST UTeM IoT Challenge 2022. This page provides every s
 7. 10k ohm resistor
 8. Breadboard (400)
 9. Jumper wires (Male-to-Female and Male-to-Male)
+10. Micro-USB cable
 
 ## 2.2. Software
-1. Arduino IDE (1.8.19)
-   *Arduino IDE (2.0) is still under testing. Update will be provided.
+1. Arduino IDE (2.0+)
 2. Blynk IoT Apps (access from web browser)
 
 # 3. Overall Circuit Assembly
@@ -130,76 +125,8 @@ If the message "ESP not responding" received during program execution, most like
 
 
 # 4. Arduino IDE Setup
-## 4.1. _This is for verion 1.8.19_ 
-### 4.1.1. Preference Configurations
-
-1. Navigate to **File > Preferences**
-   
-   ![](./images/ardu-preferences.png)
-
-2. Click on the icon for **Additional Boards Manager URLs**
-
-    ![](./images/ardu-add-board.png)  
-
-3. Type the following links into the textbox.
-   
-   ```
-   https://github.com/stm32duino/BoardManagerFiles/raw/main/package_stmicroelectronics_index.json
-   http://arduino.esp8266.com/stable/package_esp8266com_index.json
-   ```
-
-4. Press **OK**
-
-### 4.1.2. Board Manager Setup
-
-1.  Navigate to **Tools > Board: > Board Manager**
-   
-    ![](./images/ardu-board-manager.png)
-  
-2.  Type ```stm32``` in the search box. Select "STM32 MCU based Boards" and click **Install**.
-    
-    ![](./images/ardu-stm32-install.png)
-  
-3. Type ```esp8266``` in the search box. Select "esp8266" and click **Install**.
-
-    ![](./images/ardu-esp8266-install.png)
-
-### 4.1.3. Library Setup
-
-1. Download the Blynk_Release_v1.1.0.zip file from [Blynk Github](https://github.com/blynkkk/blynk-library/releases/tag/v1.1.0). 
-   
-    ![](./images/blynk-lib-dload.png)
-
-2. Extract and copy both **Libraries** and **Tools** folders.
-   
-3. Paste all of the folders to your _sketchbook folder_ of Arduino IDE. Navigate to **File > Preference** in Arduino IDE to find your _sketchbook folder_.
-   
-    ![](./images/ardu-folder-loc.png)
-
-    >- **libraries** should go to **libraries** 
-    >- **tools** should go to **tools** 
-    >- If you don't have **libraries** or **tools** folders, you can create them manually.
-
-4. Navigate to **Sketch > Include library > Manage Libraries**
-
-5. In the search box, type ```dht sensor library```. Click **Install**
-
-    ![](./images/ardu-dht-sensor.png)
-
-    > If there is prompt to install "Adafruit Unified Sensor", click **YES**
-
-6. In the search box, type ```Adafruit Unified Sensor```. Click **Install**
-   Skip this instruction if you already install the library in (2).
-
-   ![](./images/ardu-adafruit-lib.png)
-
-### 4.1.4. Load the stiot2022 sketch
-Download and open the [stiot2022 sketch](./stiot2022-v2/stiot2022-v2.ino) in your PC.
-
-![](./images/ardu-sketch.png)
-
-## 4.2. Arduino Version 2.0
-###  4.2.1. Preference Configurations
+## 4.1. Arduino Version 2.0
+###  4.1.1. Preference Configurations
 
 1. Navigate to **File > Preferences**
    
@@ -218,7 +145,7 @@ Download and open the [stiot2022 sketch](./stiot2022-v2/stiot2022-v2.ino) in you
 
 4. Press **OK**
 
-###  4.2.2. Board Manager Setup
+###  4.1.2. Board Manager Setup
 
 1.  Navigate to **Tools > Board: > Board Manager**
    
@@ -232,7 +159,7 @@ Download and open the [stiot2022 sketch](./stiot2022-v2/stiot2022-v2.ino) in you
 
     ![](./images/ardu2-esp8266-install.png)
 
-###  4.2.3. Library Setup
+###  4.1.3. Library Setup
 
 1. Download the Blynk_Release_v1.1.0.zip file from [Blynk Github](https://github.com/blynkkk/blynk-library/releases/tag/v1.1.0). 
    
@@ -261,7 +188,7 @@ Download and open the [stiot2022 sketch](./stiot2022-v2/stiot2022-v2.ino) in you
 
    ![](./images/ardu2-adafruit-install.png)
 
-###  4.2.4. Load the stiot2022 sketch
+###  4.1.4. Load the stiot2022 sketch
 Download and open the [stiot2022 sketch](./stiot2022-v2/stiot2022-v2.ino) in your PC.
 
 ![](./images/ardu2-load.png)
